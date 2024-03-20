@@ -1,0 +1,73 @@
+*{
+
+    margin: 0;
+}
+nav{
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+
+}
+
+a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#logo{
+    background-color: tomato;
+    border-radius: 50%;
+
+
+}
+
+#logo:hover{
+    background-color: rgb(87, 62, 226);
+    transition-duration: 1s;
+    transform: rotate(0.5turn);
+
+}
+
+#logo > img{
+    height: 8vh;
+    padding: 5px;
+
+}
+#fondo{
+
+    background-image: url('caca.jpg');
+    height: 105vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: desplazarYFadeIn;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes desplazarYFadeIn { /* Define los keyframes para la animación "desplazarYFadeIn" */
+    0% { /* Al inicio de la animación */
+        transform: translateY(-100px); /* Desplaza el elemento hacia arriba 100 píxeles */
+        opacity: 0; /* Hace que el elemento esté completamente transparente */
+    }
+    100% { /* Al final de la animación */
+        transform: translateY(0); /* Desplaza el elemento a su posición original (sin desplazamiento vertical) */
+        opacity: 1; /* Hace que el elemento sea completamente opaco */
+    }
+}
+
+
+#fondo > h1{
+    color: #b7c21d;
+    font-size: Srem;
+    text-shadow: 1px 1px 2px rgb(216, 205, 49);
+    
+
+
+}
